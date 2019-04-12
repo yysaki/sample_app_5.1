@@ -1,0 +1,13 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bundle_bin/*'
+    - 'bin/*'
+    - 'vendor/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Rails:
+  Enabled: true
