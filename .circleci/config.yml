@@ -44,6 +44,13 @@ jobs:
             - ./vendor/bundle
           key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
-      - run: bundle exec rails db:migrate
-      - run: bundle exec rails db:seed
-      - run: bundle exec rails test
+      - run:
+          name: Run rubocop
+          command: bundle exec rubocop
+
+      - run:
+          name: Run rails test
+          command: |
+            bundle exec rails db:migrate
+            bundle exec rails db:seed
+            bundle exec rails test
