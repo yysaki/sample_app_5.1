@@ -11,3 +11,6 @@ AllCops:
 
 Rails:
   Enabled: true
+
+Style/Documentation:
+  Enabled: false
