@@ -20,6 +20,7 @@ group :development do
   gem 'listen', '3.1.5'
   gem "spring", github: "mattbrictson/spring", branch: "honor-bundle-app-config"
   gem 'spring-watcher-listen', '2.0.1'
+  gem "rubocop"
 end
 
 group :test do
