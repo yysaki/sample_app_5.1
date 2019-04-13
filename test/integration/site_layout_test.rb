@@ -14,4 +14,11 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     get contact_path
     assert_select "title", full_title("Contact")
   end
+
+  test "access signup page" do
+    get root_path
+    assert_template 'static_pages/home'
+    get signup_path
+    assert_select "title", full_title("Sign up")
+  end
 end
