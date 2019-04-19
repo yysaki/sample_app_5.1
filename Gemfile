@@ -19,7 +19,6 @@ end
 
 group :development do
   gem 'listen', '3.1.5'
-  gem 'rubocop'
   gem 'spring', github: 'mattbrictson/spring', branch: 'honor-bundle-app-config'
   gem 'spring-watcher-listen', '2.0.1'
   gem 'web-console', '3.5.1'
@@ -31,6 +30,7 @@ group :test do
   gem 'minitest', '5.10.3'
   gem 'minitest-reporters', '1.1.14'
   gem 'rails-controller-testing', '1.0.2'
+  gem 'rubocop'
 end
 
 group :production do
