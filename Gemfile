@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'bcrypt', '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
 gem 'coffee-rails', '4.2.2'
 gem 'jbuilder', '2.7.0'
@@ -19,8 +20,7 @@ end
 
 group :development do
   gem 'listen', '3.1.5'
-  gem 'rubocop'
-  gem 'spring', github: 'mattbrictson/spring', branch: 'honor-bundle-app-config'
+  gem 'spring', '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
   gem 'web-console', '3.5.1'
 end
@@ -31,6 +31,7 @@ group :test do
   gem 'minitest', '5.10.3'
   gem 'minitest-reporters', '1.1.14'
   gem 'rails-controller-testing', '1.0.2'
+  gem 'rubocop'
 end
 
 group :production do
