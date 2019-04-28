@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/BlockLength
 guard :minitest, spring: 'bin/rails test', all_on_start: false do
   watch(%r{^test/(.*)/?(.*)_test\.rb$})
   watch('test/test_helper.rb') { 'test' }
@@ -36,7 +35,6 @@ guard :minitest, spring: 'bin/rails test', all_on_start: false do
       ['test/integration/microposts_interface_test.rb']
   end
 end
-# rubocop:enable Metrics/BlockLength
 
 def integration_tests(resource = :all)
   if resource == :all

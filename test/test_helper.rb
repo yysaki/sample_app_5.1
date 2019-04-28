@@ -17,7 +17,6 @@ require 'rails/test_help'
 require 'minitest/reporters'
 Minitest::Reporters.use!
 
-# rubocop:disable Style/ClassAndModuleChildren
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml
   # for all tests in alphabetical order.
@@ -28,4 +27,3 @@ class ActiveSupport::TestCase
     !session[:user_id].nil?
   end
 end
-# rubocop:enable Style/ClassAndModuleChildren

@@ -26,3 +26,9 @@ Naming/PredicateName:
 Rails/SkipsModelValidations:
   Whitelist:
     - update_attribute
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
