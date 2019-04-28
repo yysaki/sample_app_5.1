@@ -17,3 +17,8 @@ Style/Documentation:
 
 Layout/IndentationConsistency:
   EnforcedStyle: rails
+
+Naming/PredicateName:
+  NameWhitelist:
+    - is_a?
+    - is_logged_in?
