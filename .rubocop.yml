@@ -26,6 +26,7 @@ Naming/PredicateName:
 Rails/SkipsModelValidations:
   Whitelist:
     - update_attribute
+    - update_columns
 
 Metrics/BlockLength:
   Enabled: false
@@ -34,4 +35,7 @@ Style/ClassAndModuleChildren:
   Enabled: false
 
 Metrics/AbcSize:
-  Max: 25
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 20
