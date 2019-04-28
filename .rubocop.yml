@@ -22,3 +22,7 @@ Naming/PredicateName:
   NameWhitelist:
     - is_a?
     - is_logged_in?
+
+Rails/SkipsModelValidations:
+  Whitelist:
+    - update_attribute
