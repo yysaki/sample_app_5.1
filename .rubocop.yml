@@ -22,3 +22,16 @@ Naming/PredicateName:
   NameWhitelist:
     - is_a?
     - is_logged_in?
+
+Rails/SkipsModelValidations:
+  Whitelist:
+    - update_attribute
+
+Metrics/BlockLength:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 25
