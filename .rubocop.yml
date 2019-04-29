@@ -23,6 +23,9 @@ Naming/PredicateName:
     - is_a?
     - is_logged_in?
 
+Naming/AccessorMethodName:
+  Enabled: false
+
 Rails/SkipsModelValidations:
   Whitelist:
     - update_attribute
