@@ -35,6 +35,9 @@ Rails/SkipsModelValidations:
 Metrics/BlockLength:
   Enabled: false
 
+Metrics/LineLength:
+  Enabled: false
+
 Style/ClassAndModuleChildren:
   Enabled: false
 
