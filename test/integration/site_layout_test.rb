@@ -19,6 +19,10 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', login_path
     assert_select 'a[href=?]', about_path
     assert_select 'a[href=?]', contact_path
+
+    assert_select '#following', 0
+    assert_select '#followers', 0
+
     get contact_path
     assert_select 'title', full_title('Contact')
   end
@@ -36,6 +40,10 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', login_path, 0
     assert_select 'a[href=?]', about_path
     assert_select 'a[href=?]', contact_path
+
+    assert_select '#following'
+    assert_select '#followers'
+
     get contact_path
     assert_select 'title', full_title('Contact')
   end
