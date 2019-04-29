@@ -30,6 +30,7 @@ Rails/SkipsModelValidations:
   Whitelist:
     - update_attribute
     - update_columns
+    - toggle!
 
 Metrics/BlockLength:
   Enabled: false
